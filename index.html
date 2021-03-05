@@ -86,6 +86,10 @@
 </head>
 
 <body>
+<audio controls="controls" autoplay="autoplay" height="100" width="100">
+                <source src="1.mp3" type="audio/mp3" />
+                <embed height="100" width="100" src="1.mp3" />
+            </audio>
 <!--&lt;!&ndash;更改为你女朋友的头像&ndash;&gt;-->
 <div class="cs">
     <img src="1.jpg" id="logo">
@@ -99,7 +103,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("03/21/1992 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("03/14/1992 00:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
